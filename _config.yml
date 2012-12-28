@@ -1,5 +1,5 @@
 permalink:  pretty
-exclude: [scss]
+exclude: [scss, iakshay.sublime-project, iakshay.sublime-workspace]
 markdown: maruku
 server: true
 auto: true
@@ -7,7 +7,7 @@ pygments: true
 
 # Custom config
 title: iAkshay
-url: http://iakshay.net
+url: /
 tagline: "Passionate web developer, Future engineer & Apple Fanboy"
 
 author:
