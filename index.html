@@ -1,0 +1,29 @@
+---
+title: Home
+layout: base
+---
+<!-- Latest Post -->
+{% assign post = site.posts.first %}
+<article>
+	<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+	<p class="meta">
+		{{ post.date | date:"%B %d, %Y" }}
+	</p>
+	<div class="entry">
+		{{ post.content | emojify }}
+		<!-- <a class="button">Continue →</a> -->
+	</div>
+</article>
+
+<h2> Recent Posts </h2>
+<!-- Other Recent Posts -->
+<ul class="recent">
+{% for post in site.posts %}
+	<li>
+		<a href="{{ post.url }}">
+			<h3>{{ post.title }}</h3>
+			<span>{{ post.date | date:"%B %d, %Y" }}</span>
+		</a>
+	</li>
+{% endfor %}
+</ul>

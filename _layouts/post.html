@@ -1,0 +1,40 @@
+---
+layout: base
+---
+
+	<article>
+		<h2>{{ page.title }}</h2>
+        <p class="meta">
+            {{ page.date | date:"%B %d, %Y" }} // <a href="{{ post.url }}">permalink</a>
+        </p>
+		<div class="entry">
+			{{ content | emojify }}
+		</div>
+	</article>
+    <section class="post-nav">
+        {% if page.previous %}       
+        <div class="post-prev"> 
+            <strong>Previous</strong><br><a href="{{ page.previous.url }}" rel="prev">{{ page.previous.title }}</a>
+        </div>
+        {% endif %}
+
+        {% if page.next %} 
+        <div class="post-next">
+            <strong>Next</strong><br> <a href="{{ page.next.url }}" rel="prev">{{ page.next.title }}</a>
+        </div>
+        {% endif %}
+    </section>
+    <h2>Discussion</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'iakshay'; 
+        var disqus_developer = 1;
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>

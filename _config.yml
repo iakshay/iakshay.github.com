@@ -1,0 +1,19 @@
+permalink:  pretty
+exclude: [scss]
+markdown: maruku
+server: true
+auto: true
+pygments: true
+
+# Custom config
+title: iAkshay
+url: http://iakshay.net
+tagline: "Passionate web developer, Future engineer & Apple Fanboy"
+
+author:
+ name: Akshay Aurora
+ twitter: akshayaurora
+ facebook: akshayaurora
+ google_plus: 103665688081564203429
+ github: iakshay
+ email: me@iakshay.net

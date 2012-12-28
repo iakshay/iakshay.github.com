@@ -1,0 +1,90 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+h2{
+	font-size:2em;
+	display: inline-block;
+}
+
+a:hover h2{
+	color:#1F7ECD;
+}
+h3{
+	font-size: 1.7em;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	color: #4A4A4A;
+	line-height: 1.2em;
+	margin-bottom: 0.3em;
+}
+
+article{
+	font-size:18px;
+	line-height: 32px;
+}
+
+strong{
+	font-weight:400;
+}
+.entry a{
+	text-decoration: underline;
+}
+p {
+    margin-bottom: 0;
+}
+
+p + p {
+    text-indent: 2em;
+    margin-top: 10px;
+}
+
+pre{
+	margin:0;
+	padding:5px;
+}
+
+em{
+	padding: 1px 8px;
+	background: rgba(22, 4, 4, 0.07);
+	border-radius: 5px;
+}
+
+blockquote {
+background:#f9f9f9;
+border-left:10px solid #ccc;
+margin:1.5em 10px;
+padding:.5em 10px;
+quotes:"\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+color:#ccc;
+content:open-quote;
+font-size:4em;
+line-height:.1em;
+margin-right:.25em;
+vertical-align:-.4em;
+}
+blockquote p {
+display:inline;
+}
+
+code{
+	font:14px Consolas, Monaco,"Lucida Console";
+	color:#eee;
+	background:#222;
+	padding: 0 5px;
+	border-radius: 4px;
+}
+
+.highlight { 
+	background:#222;
+	padding:8px !important;
+	margin:10px 0;
+	color:#F8F8F8;
+	font:14px Consolas, Monaco,"Lucida Console";
+	border-radius: 10px
+}
+
+.highlight code{
+	padding:0;
+}

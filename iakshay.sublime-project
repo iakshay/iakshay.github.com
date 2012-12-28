@@ -1,0 +1,9 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/akshay/Sites/iakshay.github.com",
+			 "folder_exclude_patterns": ["css", "_site", "scss/bourbon"]
+		}
+	]
+}
