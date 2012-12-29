@@ -1,6 +1,110 @@
 ---
-layout: page
-title : Page NOT FOUND.
+layout: default
 ---
-
-{% include 404.html %}
+<!doctype html>
+<html
+<head>
+	<title>{{ page.title}} | {{ site.title }}</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="{{site.url}}/css/style.css" />
+	<style>
+		{{ page.custom_css }}
+	</style>
+</head>
+<body class="{{ page.class }}">
+	<header>
+		<div class="inner">
+			<hgroup>
+				<a href="/"><h1>{{ site.title }}</h1></a>
+				<h3>{{ site.tagline }}</h3>
+			</hgroup>
+			<nav>
+				<div>
+				<ul class="face">			
+					<li class="archives">
+						<a href="/archives/">
+							<i aria-hidden="true" class="icon-archives"></i>
+							<span>Archives</span>
+						</a>
+					</li>
+					<li class="labs">
+						<a href="/labs/">
+							<i aria-hidden="true" class="icon-labs"></i>
+							<span>Labs</span>
+						</a>
+					</li>
+					<li class="projects">
+						<a href="/projects/">
+							<i aria-hidden="true" class="icon-projects"></i>
+							<span>Projects</span>
+						</a>
+					</li>
+					<li class="about">
+						<a href="/about/">
+							<i aria-hidden="true" class="icon-about"></i>
+							<span>About</span>
+						</a>
+					</li>
+					<li class="feed">
+						<a href="/atom.xml/">
+							<i aria-hidden="true" class="icon-feed"></i>
+							<span>RSS Feed</span>
+						</a>
+					</li>
+				</ul>
+				<section class="search">
+					<form action="">
+						<input type="text" placeholder="To search type and hit enter"/>
+					</form>
+				</section>
+				</div>
+			</nav>
+			<!-- <span class="search-btn">
+				<i aria-hidden="true" class="icon-search"></i>
+			</span> -->
+		</div>
+	</header>
+	<div class="container">	
+		<div class="content">
+			<h2>Page not Found</h2>
+			<p>This means that the page you are trying to access does not exist in reality. Please try another page.</p>
+		</div>
+		<footer>
+			<ul class="social">
+				<li>
+					<a href="http://twitter.com/{{ site.author.twitter }}">
+						<i aria-hidden="true" class="icon-twitter"></i>
+						<span>Twitter</span>
+					</a>
+				</li>
+				<li>
+					<a href="http://facebook.com/{{ site.author.facebook }}">
+						<i aria-hidden="true" class="icon-facebook"></i>
+						<span>Facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://plus.google.com/{{ site.author.google_plus }}/">
+						<i aria-hidden="true" class="icon-google-plus"></i>
+						<span>Google+</span>
+					</a>
+				</li>
+				<li>
+					<a href="http://github.com/{{ site.author.github }}">
+						<i aria-hidden="true" class="icon-github"></i>
+						<span>Github</span>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:{{ site.author.email }}">
+						<i aria-hidden="true" class="icon-feed"></i>
+						<span>Email</span>
+					</a>
+				</li>
+			</ul>
+			<p>&copy; 2013 {{ site.author.name }} | Powered by Jekyll</p>
+		</footer>
+	</div>
+	<script src="{{ site.url }}/js/script.js"></script>
+</body>
+</html>
