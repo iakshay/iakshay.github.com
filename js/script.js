@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		return document.querySelectorAll(q);
 	}
 
-	var searchBtn = $('.search-btn')[0],
+	/*var searchBtn = $('.search-btn')[0],
 		   search = $('.search')[0],
 		     list = $('nav ul')[0],
 			  nav = $('nav')[0];
@@ -18,6 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
 			search.classList.toggle('face');
 			nav.classList.remove('hideNav');
 		}, 800);
-	}, false);
+	}, false);*/
 
+	var navLinks = $('nav a'), i;
+
+	for(i=0;i<navLinks.length;i++){
+		if (navLinks[i].href === window.location.href){
+			navLinks[i].classList.add('current');
+			break;
+		}
+	}
 });

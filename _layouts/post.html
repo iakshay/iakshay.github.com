@@ -1,14 +1,13 @@
 ---
 layout: base
 ---
-
 	<article>
 		<h2>{{ page.title }}</h2>
         <p class="meta">
             {{ page.date | date:"%B %d, %Y" }} // <a href="{{ post.url }}">permalink</a>
         </p>
 		<div class="entry">
-			{{ content | emojify }}
+			{{ content }}
 		</div>
 	</article>
     <section class="post-nav">

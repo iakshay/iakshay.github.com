@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About
-class: about
 ---
 
-{.class}I will tell you about myself later.
+>{.className}{#id}This is the blockquote

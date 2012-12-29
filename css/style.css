@@ -313,92 +313,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-/*
- * Image replacement
- */
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  /* IE 6/7 fallback */
-  *text-indent: -9999px; }
-
-.ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 100%; }
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-.hidden {
-  display: none !important;
-  visibility: hidden; }
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto; }
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-.invisible {
-  visibility: hidden; }
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
-
-.clearfix:after {
-  clear: both; }
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.clearfix {
-  *zoom: 1; }
-
 body {
   font: 18px 'Open Sans', sans-serif;
   color: #4A4A4A;
@@ -809,8 +723,27 @@ article .meta {
   border: 0; }
 
 /*--------------------
-	BUTTONS
+	FOOTER
 --------------------*/
+footer {
+  margin-top: 50px;
+  border-top: 2px dotted #E0E0E0;
+  text-align: center; }
+  footer p {
+    font-size: 0.95em; }
+
+.social {
+  display: inline-block;
+  list-style: none;
+  margin: 35px 0 0;
+  padding: 0; }
+  .social li {
+    display: inline-block; }
+  .social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px; }
+
 @-moz-keyframes btn-show {
   50% {
     -webkit-box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
@@ -886,28 +819,6 @@ article .meta {
     -webkit-animation: btn-show 0.6s ease-in-out infinite;
     -moz-animation: btn-show 0.6s ease-in-out infinite;
     animation: btn-show 0.6s ease-in-out infinite; }
-
-/*--------------------
-	FOOTER
---------------------*/
-footer {
-  margin-top: 50px;
-  border-top: 2px dotted #E0E0E0;
-  text-align: center; }
-  footer p {
-    font-size: 0.95em; }
-
-.social {
-  display: inline-block;
-  list-style: none;
-  margin: 35px 0 0;
-  padding: 0; }
-  .social li {
-    display: inline-block; }
-  .social a {
-    display: inline-block;
-    width: 40px;
-    height: 40px; }
 
 @font-face {
   font-family: 'icomoon';

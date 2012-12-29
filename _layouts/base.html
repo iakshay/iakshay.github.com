@@ -4,9 +4,12 @@ layout: default
 <!doctype html>
 <html
 <head>
-	<title>{{ site.title }}</title>
+	<title>{{ page.title}} | {{ site.title }}</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="{{site.url}}/css/style.css" />
+	<style>
+		{{ page.custom_css }}
+	</style>
 </head>
 <body class="{{ page.class }}">
 	<header>
@@ -19,31 +22,31 @@ layout: default
 				<div>
 				<ul class="face">			
 					<li class="archives">
-						<a href="/archives">
+						<a href="/archives/">
 							<i aria-hidden="true" class="icon-archives"></i>
 							<span>Archives</span>
 						</a>
 					</li>
 					<li class="labs">
-						<a href="/labs">
+						<a href="/labs/">
 							<i aria-hidden="true" class="icon-labs"></i>
 							<span>Labs</span>
 						</a>
 					</li>
 					<li class="projects">
-						<a href="/projects">
+						<a href="/projects/">
 							<i aria-hidden="true" class="icon-projects"></i>
 							<span>Projects</span>
 						</a>
 					</li>
 					<li class="about">
-						<a class="current" href="/about">
+						<a href="/about/">
 							<i aria-hidden="true" class="icon-about"></i>
 							<span>About</span>
 						</a>
 					</li>
 					<li class="feed">
-						<a href="/atom.xml">
+						<a href="/atom.xml/">
 							<i aria-hidden="true" class="icon-feed"></i>
 							<span>RSS Feed</span>
 						</a>
@@ -56,9 +59,9 @@ layout: default
 				</section>
 				</div>
 			</nav>
-			<span class="search-btn">
+			<!-- <span class="search-btn">
 				<i aria-hidden="true" class="icon-search"></i>
-			</span>
+			</span> -->
 		</div>
 	</header>
 	<div class="container">	

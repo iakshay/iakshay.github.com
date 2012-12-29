@@ -10,15 +10,14 @@ layout: base
 		{{ post.date | date:"%B %d, %Y" }}
 	</p>
 	<div class="entry">
-		{{ post.content | emojify }}
-		<!-- <a class="button">Continue →</a> -->
+		{{ post.content }}
 	</div>
 </article>
 
 <h2> Recent Posts </h2>
 <!-- Other Recent Posts -->
 <ul class="recent">
-{% for post in site.posts %}
+{% for post in site.posts offset:1 limit:5 %}
 	<li>
 		<a href="{{ post.url }}">
 			<h3>{{ post.title }}</h3>
