@@ -28,42 +28,52 @@
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
-.icon-twitter:before {
-	content: "\21";
+
+.icon-github:before {
+	content: "\e000";
 }
 .icon-facebook:before {
-	content: "\22";
+	content: "\e001";
+}
+.icon-twitter:before {
+	content: "\e002";
 }
 .icon-feed:before {
-	content: "\23";
-}
-.icon-dribbble:before {
-	content: "\24";
-}
-.icon-google-plus:before {
-	content: "\25";
+	content: "\e003";
 }
 .icon-youtube:before {
-	content: "\26";
+	content: "\e004";
+}
+.icon-google-plus:before {
+	content: "\e005";
 }
 .icon-apple:before {
-	content: "\27";
-}
-.icon-github:before {
-	content: "\28";
-}
-.icon-labs:before {
-	content: "\29";
+	content: "\e006";
 }
 .icon-about:before {
-	content: "\2a";
+	content: "\e008";
 }
-.icon-archives:before {
-	content: "\2b";
+.icon-labs:before {
+	content: "\e009";
+}
+.icon-mail:before {
+	content: "\e00a";
+}
+.icon-html5:before {
+	content: "\e00b";
+}
+.icon-css3:before {
+	content: "\e00c";
+}
+.icon-html5-2:before {
+	content: "\e00d";
 }
 .icon-projects:before {
-	content: "\2c";
+	content: "\e00e";
 }
 .icon-search:before {
-	content: "\2d";
+	content: "\e00f";
+}
+.icon-archives:before {
+	content: "\e007";
 }
