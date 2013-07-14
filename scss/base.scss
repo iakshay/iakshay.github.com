@@ -13,6 +13,10 @@ a {
 a:hover {
 	color: #1F7ECD;
 }
+
+p{
+	line-height:32px;
+}
 .content ::selection {
 	background:rgba(74, 74, 74, 0.08);
 }
@@ -111,11 +115,31 @@ nav{
 			margin-left:-8px;
 		}
 	}
+	.gsoc{
+		a{
+			width: 70px;
+		}
+		a:hover, .current{
+			background:#7AD1E1;
+		}
+		span{
+			width:72px;
+			margin-left:-7px;
+		}
+	}
 	.current, a:hover{
 		color:#fff;
+		.icon-gsoc{
+			-webkit-filter:grayscale(0);
+		}
 	}
-
 }
+.icon-gsoc{
+	background: url(../images/gsoc-small.png) no-repeat 6px 5px;
+	border-radius:6px;
+	-webkit-filter: grayscale(0.8);
+}
+
 nav, footer{
 	ul span{
 		display: inline-block;
@@ -238,7 +262,7 @@ header h3{
 		font-size: 15px;
 		color:#7D7D7D;
 		display: inline-block;
-		float:right;
+		float:left;
 	}
 	a{
 		color: #4A4A4A;
@@ -249,11 +273,11 @@ header h3{
 		@include transition(background 0.4s ease);
 	}
 	h3{
-		margin:0;
+		margin:0 20px 0 0;
 		font-weight:300;
 		font-size:1em;
 		line-height:60px;
-		max-width:70%;
+		//max-width:70%;
 		float:left;
 	}
 	a:hover{

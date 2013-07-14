@@ -326,6 +326,9 @@ a {
 a:hover {
   color: #1F7ECD; }
 
+p {
+  line-height: 32px; }
+
 .content ::selection {
   background: rgba(74, 74, 74, 0.08); }
 
@@ -391,8 +394,6 @@ nav {
       box-shadow: 1px 1px 3px #222;
       -webkit-transition: background 0.3s ease, color 0.2s ease;
       -moz-transition: background 0.3s ease, color 0.2s ease;
-      -ms-transition: background 0.3s ease, color 0.2s ease;
-      -o-transition: background 0.3s ease, color 0.2s ease;
       transition: background 0.3s ease, color 0.2s ease; }
   nav .archives a:hover, nav .archives .current {
     background: #D24D33; }
@@ -415,8 +416,22 @@ nav {
     background: #439238; }
   nav .projects span {
     margin-left: -8px; }
+  nav .gsoc a {
+    width: 70px; }
+  nav .gsoc a:hover, nav .gsoc .current {
+    background: #7AD1E1; }
+  nav .gsoc span {
+    width: 72px;
+    margin-left: -7px; }
   nav .current, nav a:hover {
     color: #fff; }
+    nav .current .icon-gsoc, nav a:hover .icon-gsoc {
+      -webkit-filter: grayscale(0); }
+
+.icon-gsoc {
+  background: url(../images/gsoc-small.png) no-repeat 6px 5px;
+  border-radius: 6px;
+  -webkit-filter: grayscale(0.8); }
 
 nav ul span, footer ul span {
   display: inline-block;
@@ -432,8 +447,6 @@ nav ul span, footer ul span {
   transform: translateY(-44px);
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 nav a:hover span, footer a:hover span {
   color: #fff;
@@ -634,7 +647,7 @@ header h3 {
     font-size: 15px;
     color: #7D7D7D;
     display: inline-block;
-    float: right; }
+    float: left; }
   .recent a {
     color: #4A4A4A;
     display: block;
@@ -643,8 +656,6 @@ header h3 {
     *zoom: 1;
     -webkit-transition: background 0.4s ease;
     -moz-transition: background 0.4s ease;
-    -ms-transition: background 0.4s ease;
-    -o-transition: background 0.4s ease;
     transition: background 0.4s ease; }
     .recent a:before, .recent a:after {
       content: " ";
@@ -652,11 +663,10 @@ header h3 {
     .recent a:after {
       clear: both; }
   .recent h3 {
-    margin: 0;
+    margin: 0 20px 0 0;
     font-weight: 300;
     font-size: 1em;
     line-height: 60px;
-    max-width: 70%;
     float: left; }
   .recent a:hover {
     background: rgba(74, 74, 74, 0.05); }
@@ -746,42 +756,36 @@ footer {
 
 @-moz-keyframes btn-show {
   50% {
-    -webkit-box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     position: relative;
     top: 4px; } }
 
 @-webkit-keyframes btn-show {
   50% {
-    -webkit-box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     position: relative;
     top: 4px; } }
 
 @-o-keyframes btn-show {
   50% {
-    -webkit-box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     position: relative;
     top: 4px; } }
 
 @-ms-keyframes btn-show {
   50% {
-    -webkit-box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     position: relative;
     top: 4px; } }
 
 @-khtml-keyframes btn-show {
   50% {
-    -webkit-box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     position: relative;
     top: 4px; } }
 
 @keyframes btn-show {
   50% {
-    -webkit-box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     position: relative;
     top: 4px; } }
@@ -799,15 +803,11 @@ footer {
   border-radius: 8px;
   text-decoration: none !important;
   text-align: center;
-  -webkit-box-shadow: 0px 7px 0px #1f1f1f, 0px 7px 25px rgba(82, 72, 72, 0.7);
   box-shadow: 0px 7px 0px #1f1f1f, 0px 7px 25px rgba(82, 72, 72, 0.7);
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
-  -ms-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
   transition: all 0.1s ease; }
   .button:active {
-    -webkit-box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 6px rgba(82, 72, 72, 0.9);
     box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 6px rgba(82, 72, 72, 0.9);
     -webkit-animation: none !important;
     -moz-animation: none !important;
@@ -1195,3 +1195,10 @@ code {
 /* Literal.Number.Integer.Long */
 .highlight .lineno {
   color: #343434; }
+
+@media only screen and (min-width: 350px) and (max-width: 507px) {
+  header .inner {
+    height: 120px; } }
+@media only screen and (max-width: 350px) {
+  header .inner {
+    height: 120px; } }
