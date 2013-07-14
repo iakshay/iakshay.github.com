@@ -1,8 +1,8 @@
 permalink:  pretty
 exclude: [scss, iakshay.sublime-project]
 markdown: maruku
-server: true
-auto: true
+#server: true
+#auto: true
 pygments: true
 
 # Custom config

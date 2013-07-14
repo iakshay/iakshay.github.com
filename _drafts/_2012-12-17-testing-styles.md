@@ -8,8 +8,6 @@ title: Testing Styles
    
    Math support is a good addition, except that it makes the Preview blink and blink again whenever typing, as it needs to refresh the whole typesetting. That's why I make it disabled by default. I suggest only enable it when you write Math Formulas.
 
-
-
 2. Make sure you've connected to the internet.
 
    The Math rendering is powered by [MathJax](http://www.mathjax.org), the resources such as fonts are all online, thus the internet connection is needed for it to work.
