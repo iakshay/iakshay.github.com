@@ -1,14 +1,14 @@
 permalink:  pretty
-exclude: [scss, iakshay.sublime-project]
+exclude: [scss]
 markdown: maruku
-#server: true
-#auto: true
 pygments: true
+baseurl: /
 
 # Custom config
 title: iAkshay
-url: http://www.iakshay.net/ 
 tagline: "Passionate web developer, Future engineer & Apple Fanboy"
+url: http://www.iakshay.net
+
 
 author:
  name: Akshay Aurora
