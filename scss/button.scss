@@ -34,4 +34,8 @@ $background: #333; //#1F7ECD
     	color: #fff;
 		@include animation(btn-show 0.6s ease-in-out infinite);
     }
+
+    &.medium{
+        padding:12px 15px;
+    }
 }

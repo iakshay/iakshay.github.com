@@ -314,7 +314,7 @@ table {
   border-spacing: 0; }
 
 body {
-  font: 18px 'Open Sans', sans-serif;
+  font: 18px 'Open Sans', Georgia;
   color: #4A4A4A;
   font-weight: 300;
   background: url(../images/gray_jean.png); }
@@ -819,6 +819,8 @@ footer {
     -webkit-animation: btn-show 0.6s ease-in-out infinite;
     -moz-animation: btn-show 0.6s ease-in-out infinite;
     animation: btn-show 0.6s ease-in-out infinite; }
+  .button.medium {
+    padding: 12px 15px; }
 
 @font-face {
   font-family: 'icomoon';
