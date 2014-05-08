@@ -3,10 +3,11 @@ exclude: [scss]
 markdown: maruku
 pygments: true
 baseurl: /
+timezone: Asia/Kolkata
 
 # Custom config
 title: iAkshay
-tagline: "Passionate web developer, Future engineer & Apple Fanboy"
+tagline: "Passionate developer, Future engineer & Apple Fanboy"
 url: http://www.iakshay.net
 
 
