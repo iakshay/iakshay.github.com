@@ -1,6 +1,6 @@
 permalink:  pretty
 exclude: [scss]
-markdown: maruku
+markdown: kramdown
 pygments: true
 baseurl: /
 timezone: Asia/Kolkata
