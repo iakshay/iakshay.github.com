@@ -1,11 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
-/* normalize.css v2.0.1 | MIT License | git.io/normalize */
+@charset "UTF-8";
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
 /**
  * Correct `block` display not defined in IE 8/9.
  */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 article,
 aside,
 details,
@@ -335,6 +336,9 @@ p {
 img {
   max-width: 100%; }
 
+.noindent {
+  text-indent: 0 !important; }
+
 /*--------------------
 	HEADER
 --------------------*/
@@ -478,7 +482,6 @@ i {
     -ms-transform: rotateX(90deg);
     -o-transform: rotateX(90deg);
     transform: rotateX(90deg); } }
-
 @-webkit-keyframes rotateNav {
   0% {
     -webkit-transform: rotateX(0deg);
@@ -493,7 +496,6 @@ i {
     -ms-transform: rotateX(90deg);
     -o-transform: rotateX(90deg);
     transform: rotateX(90deg); } }
-
 @-o-keyframes rotateNav {
   0% {
     -webkit-transform: rotateX(0deg);
@@ -508,7 +510,6 @@ i {
     -ms-transform: rotateX(90deg);
     -o-transform: rotateX(90deg);
     transform: rotateX(90deg); } }
-
 @-ms-keyframes rotateNav {
   0% {
     -webkit-transform: rotateX(0deg);
@@ -523,7 +524,6 @@ i {
     -ms-transform: rotateX(90deg);
     -o-transform: rotateX(90deg);
     transform: rotateX(90deg); } }
-
 @-khtml-keyframes rotateNav {
   0% {
     -webkit-transform: rotateX(0deg);
@@ -538,7 +538,6 @@ i {
     -ms-transform: rotateX(90deg);
     -o-transform: rotateX(90deg);
     transform: rotateX(90deg); } }
-
 @keyframes rotateNav {
   0% {
     -webkit-transform: rotateX(0deg);
@@ -553,7 +552,6 @@ i {
     -ms-transform: rotateX(90deg);
     -o-transform: rotateX(90deg);
     transform: rotateX(90deg); } }
-
 .hideNav {
   -webkit-animation: rotateNav 0.5s ease-in-out forwards;
   -moz-animation: rotateNav 0.5s ease-in-out forwards;
@@ -653,14 +651,12 @@ header h3 {
     display: block;
     padding: 0 5px;
     line-height: 60px;
-    *zoom: 1;
     -webkit-transition: background 0.4s ease;
     -moz-transition: background 0.4s ease;
     transition: background 0.4s ease; }
-    .recent a:before, .recent a:after {
-      content: " ";
-      display: table; }
     .recent a:after {
+      content: "";
+      display: table;
       clear: both; }
   .recent h3 {
     margin: 0 20px 0 0;
@@ -689,42 +685,39 @@ article .meta {
   color: #979797;
   margin: 5px 0 !important; }
 
-.post-nav {
-  *zoom: 1; }
-  .post-nav:before, .post-nav:after {
-    content: " ";
-    display: table; }
-  .post-nav:after {
-    clear: both; }
-  .post-nav .post-prev {
-    box-sizing: border-box;
-    position: relative;
-    width: 50%;
-    padding-left: 35px;
-    float: left; }
-    .post-nav .post-prev:before {
-      position: absolute;
-      left: 0;
-      top: -5px;
-      content: "«";
-      font-size: 40px;
-      width: 40px;
-      height: 40px; }
-  .post-nav .post-next {
-    position: relative;
-    width: 50%;
-    box-sizing: border-box;
-    text-align: right;
-    float: right;
-    padding-right: 35px; }
-    .post-nav .post-next:after {
-      position: absolute;
-      right: 0;
-      top: -5px;
-      content: "»";
-      font-size: 40px;
-      width: 40px;
-      height: 40px; }
+.post-nav:after {
+  content: "";
+  display: table;
+  clear: both; }
+.post-nav .post-prev {
+  box-sizing: border-box;
+  position: relative;
+  width: 50%;
+  padding-left: 35px;
+  float: left; }
+  .post-nav .post-prev:before {
+    position: absolute;
+    left: 0;
+    top: -5px;
+    content: "«";
+    font-size: 40px;
+    width: 40px;
+    height: 40px; }
+.post-nav .post-next {
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: right;
+  float: right;
+  padding-right: 35px; }
+  .post-nav .post-next:after {
+    position: absolute;
+    right: 0;
+    top: -5px;
+    content: "»";
+    font-size: 40px;
+    width: 40px;
+    height: 40px; }
 
 .emoji {
   background: none;
@@ -759,37 +752,31 @@ footer {
     box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     position: relative;
     top: 4px; } }
-
 @-webkit-keyframes btn-show {
   50% {
     box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     position: relative;
     top: 4px; } }
-
 @-o-keyframes btn-show {
   50% {
     box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     position: relative;
     top: 4px; } }
-
 @-ms-keyframes btn-show {
   50% {
     box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     position: relative;
     top: 4px; } }
-
 @-khtml-keyframes btn-show {
   50% {
     box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     position: relative;
     top: 4px; } }
-
 @keyframes btn-show {
   50% {
     box-shadow: 0px 3px 0px #1f1f1f, 0px 3px 15px rgba(82, 72, 72, 0.9);
     position: relative;
     top: 4px; } }
-
 .button {
   position: relative;
   color: #fff;
@@ -828,7 +815,6 @@ footer {
   src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.svg#icomoon") format("svg"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
   font-family: 'icomoon';
@@ -924,10 +910,12 @@ strong {
 p {
   margin-bottom: 0; }
 
+/*
 p + p {
-  text-indent: 2em;
-  margin-top: 10px; }
-
+    text-indent: 2em;
+    margin-top: 10px;
+}
+*/
 pre {
   margin: 0;
   padding: 5px; }
@@ -943,7 +931,7 @@ blockquote {
   border-style: solid;
   margin: 1.5em 10px;
   padding: .5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
+  quotes: "\201C" "\201D" "\2018" "\2019";
   border-width: 1px 0 1px 10px;
   border-color: rgba(204, 204, 204, 0.6); }
 
@@ -953,7 +941,7 @@ blockquote:before {
   font-size: 4em;
   line-height: .1em;
   margin-right: .25em;
-  vertical-align: -0.4em; }
+  vertical-align: -.4em; }
 
 blockquote p {
   display: inline; }
@@ -989,7 +977,7 @@ code {
 
 /* Error */
 .highlight .k {
-  color: #CDA869; }
+  color: #cda869; }
 
 /* Keyword */
 .highlight .cm {
@@ -998,7 +986,7 @@ code {
 
 /* Comment.Multiline */
 .highlight .cp {
-  color: #5F5A60; }
+  color: #5f5a60; }
 
 /* Comment.Preproc */
 .highlight .c1 {
@@ -1012,7 +1000,7 @@ code {
 
 /* Comment.Special */
 .highlight .gd {
-  background: #420E09; }
+  background: #420e09; }
 
 /* Generic.Deleted */
 .highlight .ge {
@@ -1020,7 +1008,7 @@ code {
 
 /* Generic.Emph */
 .highlight .gr {
-  background: #B22518; }
+  background: #b22518; }
 
 /* Generic.Error */
 .highlight .gh {
@@ -1029,7 +1017,7 @@ code {
 
 /* Generic.Heading */
 .highlight .gi {
-  background: #253B22; }
+  background: #253b22; }
 
 /* Generic.Inserted */
 /* Generic.Output */
@@ -1054,7 +1042,7 @@ code {
 /* Keyword.Declaration */
 /* Keyword.Namespace */
 .highlight .kp {
-  color: #9B703F; }
+  color: #9b703f; }
 
 /* Keyword.Pseudo */
 /* Keyword.Reserved */
@@ -1062,11 +1050,11 @@ code {
 /* Literal.Number */
 /* Literal.String */
 .highlight .na {
-  color: #F9EE98; }
+  color: #f9ee98; }
 
 /* Name.Attribute */
 .highlight .nb {
-  color: #CDA869; }
+  color: #cda869; }
 
 /* Name.Builtin */
 .highlight .nc {
@@ -1075,11 +1063,11 @@ code {
 
 /* Name.Class */
 .highlight .no {
-  color: #9B859D; }
+  color: #9b859d; }
 
 /* Name.Constant */
 .highlight .nd {
-  color: #7587A6; }
+  color: #7587a6; }
 
 /* Name.Decorator */
 .highlight .ni {
@@ -1103,7 +1091,7 @@ code {
 
 /* Name.Tag */
 .highlight .nv {
-  color: #7587A6; }
+  color: #7587a6; }
 
 /* Name.Variable */
 .highlight .ow {
@@ -1116,27 +1104,27 @@ code {
 
 /* Text.Whitespace */
 .highlight .mf {
-  color: #CF6A4C; }
+  color: #cf6a4c; }
 
 /* Literal.Number.Float */
 .highlight .mh {
-  color: #CF6A4C; }
+  color: #cf6a4c; }
 
 /* Literal.Number.Hex */
 .highlight .mi {
-  color: #CF6A4C; }
+  color: #cf6a4c; }
 
 /* Literal.Number.Integer */
 .highlight .mo {
-  color: #CF6A4C; }
+  color: #cf6a4c; }
 
 /* Literal.Number.Oct */
 .highlight .sb {
-  color: #8F9D6A; }
+  color: #8f9d6a; }
 
 /* Literal.String.Backtick */
 .highlight .sc {
-  color: #8F9D6A; }
+  color: #8f9d6a; }
 
 /* Literal.String.Char */
 .highlight .sd {
@@ -1145,7 +1133,7 @@ code {
 
 /* Literal.String.Doc */
 .highlight .s2 {
-  color: #8F9D6A; }
+  color: #8f9d6a; }
 
 /* Literal.String.Double */
 .highlight .se {
@@ -1154,7 +1142,7 @@ code {
 
 /* Literal.String.Escape */
 .highlight .sh {
-  color: #8F9D6A; }
+  color: #8f9d6a; }
 
 /* Literal.String.Heredoc */
 .highlight .si {
@@ -1163,19 +1151,19 @@ code {
 
 /* Literal.String.Interpol */
 .highlight .sx {
-  color: #8F9D6A; }
+  color: #8f9d6a; }
 
 /* Literal.String.Other */
 .highlight .sr {
-  color: #E9C062; }
+  color: #e9c062; }
 
 /* Literal.String.Regex */
 .highlight .s1 {
-  color: #8F9D6A; }
+  color: #8f9d6a; }
 
 /* Literal.String.Single */
 .highlight .ss {
-  color: #CF6A4C; }
+  color: #cf6a4c; }
 
 /* Literal.String.Symbol */
 .highlight .bp {
@@ -1183,15 +1171,15 @@ code {
 
 /* Name.Builtin.Pseudo */
 .highlight .vc {
-  color: #7587A6; }
+  color: #7587a6; }
 
 /* Name.Variable.Class */
 .highlight .vg {
-  color: #7587A6; }
+  color: #7587a6; }
 
 /* Name.Variable.Global */
 .highlight .vi {
-  color: #7587A6; }
+  color: #7587a6; }
 
 /* Name.Variable.Instance */
 .highlight .il {

@@ -6,7 +6,7 @@ title : Atom Feed
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>GSoC Journal - Polishing Mozilla Developer Network</title>
- <link href="{{ site.url }}/gsoc2013-atom.xml" rel="self"/>
+ <link href="{{ site.url }}/google-summer-of-code/atom.xml" rel="self"/>
  <link href="{{ site.url }}"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>{{ site.production_url }}</id>
