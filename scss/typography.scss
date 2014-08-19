@@ -82,7 +82,7 @@ code{
 	border-radius: 4px;
 }
 
-.highlight { 
+div.highlight {
 	background:#222;
 	padding:8px !important;
 	margin:10px 0;
@@ -91,6 +91,11 @@ code{
 	border-radius: 10px
 }
 
-.highlight code{
+div.highlight code{
 	padding:0;
+}
+
+.gist table.highlight {
+    line-height:normal;
+    font-size:14px;
 }
